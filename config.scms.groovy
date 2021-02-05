@@ -267,6 +267,14 @@ scms {
             }
         }
 
+        '**/*.adoc' {
+            template = 'templates/default.vtl'
+            model {
+                //the above template uses the year for a copyright notice:
+                year = Calendar.getInstance().get(Calendar.YEAR)
+            }
+        }
+
         '**/*.vtl' {
             template = 'templates/default.vtl'
             model {
