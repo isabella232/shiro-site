@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBake</title>
+    <link>https://shiro.apache.org</link>
+    <atom:link href="https://shiro.apache.org/feed.xml" rel="self" type="application/rss+xml" />
+    <description>JBake Bootstrap Template</description>
+    <language>en-gb</language>
+    <pubDate>Fri, 10 Sep 2021 22:54:57 +0200</pubDate>
+    <lastBuildDate>Fri, 10 Sep 2021 22:54:57 +0200</lastBuildDate>
+
+    <item>
+      <title>Apache Shiro v1.8.0 released</title>
+      <link>https://shiro.apache.org/blog/2021/v1.8.0.html</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2021/v1.8.0.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Shiro team is pleased to announce the release of Apache Shiro version 1.8.0. This is a feature release for 1.x.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can learn more on &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12350384&amp;amp;projectId=12310950&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Release binaries (&lt;code&gt;.jar&lt;/code&gt;s) are also available through Maven Central and source bundles through Apache distribution mirrors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more information on &lt;a href=&quot;/documentation.html&quot;&gt;Shiro, please read the documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache Shiro Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>1.7.1 available with fix CVE-2020-17523</title>
+      <link>https://shiro.apache.org/blog/2021/v1.7.1.html</link>
+      <pubDate>Sun, 31 Jan 2021 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2021/v1.7.1.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Shiro team is pleased to announce the release of Apache Shiro version 1.7.1. This is a feature release for 1.x.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This security release contains 1 fix since the 1.7.1 release and is available for Download now.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can learn more on &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12310950&amp;amp;version=12348679&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Release binaries (&lt;code&gt;.jar&lt;/code&gt;s) are also available through Maven Central and source bundles through Apache distribution mirrors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more information on &lt;a href=&quot;/documentation.html&quot;&gt;Shiro, please read the documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache Shiro Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>1.7.0 available with fix CVE-2020-17510</title>
+      <link>https://shiro.apache.org/blog/2020/v1.7.0.html</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">blog/2020/v1.7.0.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Shiro team is pleased to announce the release of Apache Shiro version 1.7.0. This is a feature release for 1.x.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release includes 7 issues resolved since the 1.6.0 release and is available for Download now.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Of Note:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Disable session path rewriting by default.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add system property to enable backslash path normalization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DeleteMe cookie should use the defined &quot;sameSite&quot;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Also add cookie SameSite option to Spring.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SslFilter with HTTP Strict Transport Security (HSTS).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can learn more on &lt;a href=&quot;https://issues.apache.org/jira/issues/?jql=project%20%3D%20SHIRO%20AND%20fixVersion%20%3D%201.7.0&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Release binaries (&lt;code&gt;.jar&lt;/code&gt;s) are also available through Maven Central and source bundles through Apache distribution mirrors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more information on &lt;a href=&quot;/documentation.html&quot;&gt;Shiro, please read the documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache Shiro Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache Shiro 1.6.0 available</title>
+      <link>https://shiro.apache.org/blog/2020/v1.6.0.html</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">blog/2020/v1.6.0.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Shiro team is pleased to announce the release of Apache Shiro version 1.6.0. This is a feature release for 1.x.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release includes 3 issues resolved since the 1.5.3 release and is available for Download now.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Of Note:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Incorrect filterchainResolver.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SecurityUtils.securityManager should be volatile.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ArrayIndexOutOfBoundsException in Base64#decode.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add support for Global Filters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dependency upgrade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can learn more on &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12310950&amp;amp;version=12348623&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Release binaries (&lt;code&gt;.jar&lt;/code&gt;s) are also available through Maven Central and source bundles through Apache distribution mirrors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more information on &lt;a href=&quot;/documentation.html&quot;&gt;Shiro, please read the documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache Shiro Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+
+  </channel> 
+</rss>
