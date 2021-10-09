@@ -53,16 +53,16 @@
 
       <div class="masthead">
         <p class="lead">
-          <a href="index.html"><img src="img/apache-shiro-logo.png" style="height:100px; width:auto; vertical-align: bottom; margin-top: 20px;"></a>
+          <a href="index.html"><img src="img/apache-shiro-logo.png" style="height:100px; width:auto; vertical-align: bottom; margin-top: 20px;" alt="Apache Shiro Logo"></a>
           <span class="tagline">Simple. Java. Security.</span>
           <a class="pull-right" href="https://www.apache.org/events/current-event.html">
-            <img style="padding-top: 8px" src="https://www.apache.org/events/current-event-125x125.png"/>
+            <img style="padding-top: 8px" src="https://www.apache.org/events/current-event-125x125.png" alt="Apache Software Foundation Event Banner"/>
           </a>
         </p>
       </div>
 
 	<!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -78,10 +78,10 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-webapps" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Web Apps
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-webapps">
                 <li><a class="dropdown-item" href="web.html">General</a></li>
                 <li><a class="dropdown-item" href="jaxrs.html">JAX-RS</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -93,39 +93,39 @@
 
             <!-- integrations -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-integrations" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Integrations
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-integrations">
                 <li><a class="dropdown-item" href="spring-boot.html">Spring</a></li>
                 <li><a class="dropdown-item" href="guice.html">Guice</a></li>
-                <li class="divider"></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="integration.html">Third-Party Integrations</a></li>
               </ul>
             </li>
 
             <!-- Community -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-community" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Community
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-community">
                 <li><a class="dropdown-item" href="forums.html">Community Forums</a></li>
                 <li><a class="dropdown-item" href="mailing-lists.html">Mailing Lists</a></li>
                 <li><a class="dropdown-item" href="articles.html">Articles</a></li>
                 <li><a class="dropdown-item" href="news.html">News</a></li>
                 <li><a class="dropdown-item" href="events.html">Events</a></li>
-                <li class="divider"></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="community.html">More</a></li>
               </ul>
             </li>
 
             <!-- About -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 About
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-about">
                 <li><a class="dropdown-item" href="about.html">About</a></li>
                 <li><a class="dropdown-item" href="security-reports.html">Vulnerability Reports</a></li>
               </ul>
@@ -135,10 +135,10 @@
           <ul class="d-flex justify-content-end navbar-nav mb-2 mb-lg-0">
             <!-- The ASF -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-asf" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Apache Software Foundation
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-asf">
                 <li><a class="dropdown-item" href="http://www.apache.org/">Apache Homepage</a></li>
                 <li><a class="dropdown-item" href="http://www.apache.org/licenses/">License</a></li>
                 <li><a class="dropdown-item" href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
@@ -150,16 +150,12 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-
 
 	<div class="page-header">
 		<h1>Core Concepts in Apache Shiro</h1>
 	</div>
 
-	<p><em>10 September 2021</em></p>
-
-	<p><p>This part of the documentation covers Shiro's core architectural concepts.</p>
+<p>This part of the documentation covers Shiro's core architectural concepts.</p>
 <p>First we'll present Shiro's architecture and a summary of each core concept. Then we'll cover the most important concept in Shiro - the <code>Subject</code>, a security-specific 'view' of a <em>single</em> application user.<br />
 Next we'll discuss the <tt>SecurityManager</tt>, an application singleton that manages all Subjects for the application, and as well as the SecurityManager's supporting components that do most of Shiro's heavy lifting.<br />
 Then onto Realms, the security-specific DAOs, Shiro communicates with and then Permissions, the building block of any security policy.</p>
@@ -186,20 +182,17 @@ Then onto Realms, the security-specific DAOs, Shiro communicates with and then P
 If you'd like to help the Shiro project, please consider correcting, expanding, or adding documentation where you see a need.<br />
 Every little bit of help you provide expands the community and in turn improves Shiro.</p>
 <p>The easiest way to contribute your documentation is to send it to the <a href="https://lists.apache.org/list.html?user@shiro.apache.org">User Forum</a> or the <a href="mailing-lists.html">User Mailing List</a>.</p>
-</p>
 
 	<hr />
 
-		</div>
-        <div id="push"></div>
-    </div>
+</div> 
 
     <div class="footer-padding"></div>
 
-    <div class="container-fluid" id="custom-footer">
-      <footer class="row justify-content-between align-items-center border-top">
+    <div class="container-fluid pt-2 border-top" id="custom-footer">
+      <footer class="row justify-content-between align-items-center">
         <div class=" col-md-5">
-          <div class="copyright-footer d-flex flex-wrap justify-content-start">
+          <div class="copyright-footer justify-content-start">
             <a href="https://www.apache.org/foundation/contributing.html">Donate to the ASF</a>&nbsp;|&nbsp;
             <a href="https://www.apache.org/licenses/LICENSE-2.0.html">License</a>&nbsp;
             <p class="text-muted">Copyright &copy; 2008-2021 The Apache Software Foundation</p>
@@ -213,7 +206,7 @@ Every little bit of help you provide expands the community and in turn improves 
         </div>
 
         <div class="d-flex justify-content-end col-md-4" id="editThisPage">
-          <input type="hidden" id="ghEditPage" value="/home/bmarwell/git/apache/shiro-site/jbake/content/core.md"></input>
+          <input type="hidden" id="ghEditPage" value="https://github.com/apache/shiro-site/edit/jbake/jbake/content/core.md"/>
         </div>
 
         <div class="d-flex col-md-2 justify-content-end" style="position: relative">
@@ -230,7 +223,7 @@ Every little bit of help you provide expands the community and in turn improves 
     <script src="highlight.js-11.2.0/highlight.min.js"></script>
     <script src="js/shiro.js"></script>
 
-    <script type="text/javascript">
+    <script>
         docReady(
           addPageEditLink()
       );

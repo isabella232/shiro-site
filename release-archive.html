@@ -53,16 +53,16 @@
 
       <div class="masthead">
         <p class="lead">
-          <a href="index.html"><img src="img/apache-shiro-logo.png" style="height:100px; width:auto; vertical-align: bottom; margin-top: 20px;"></a>
+          <a href="index.html"><img src="img/apache-shiro-logo.png" style="height:100px; width:auto; vertical-align: bottom; margin-top: 20px;" alt="Apache Shiro Logo"></a>
           <span class="tagline">Simple. Java. Security.</span>
           <a class="pull-right" href="https://www.apache.org/events/current-event.html">
-            <img style="padding-top: 8px" src="https://www.apache.org/events/current-event-125x125.png"/>
+            <img style="padding-top: 8px" src="https://www.apache.org/events/current-event-125x125.png" alt="Apache Software Foundation Event Banner"/>
           </a>
         </p>
       </div>
 
 	<!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -78,10 +78,10 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-webapps" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Web Apps
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-webapps">
                 <li><a class="dropdown-item" href="web.html">General</a></li>
                 <li><a class="dropdown-item" href="jaxrs.html">JAX-RS</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -93,39 +93,39 @@
 
             <!-- integrations -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-integrations" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Integrations
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-integrations">
                 <li><a class="dropdown-item" href="spring-boot.html">Spring</a></li>
                 <li><a class="dropdown-item" href="guice.html">Guice</a></li>
-                <li class="divider"></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="integration.html">Third-Party Integrations</a></li>
               </ul>
             </li>
 
             <!-- Community -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-community" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Community
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-community">
                 <li><a class="dropdown-item" href="forums.html">Community Forums</a></li>
                 <li><a class="dropdown-item" href="mailing-lists.html">Mailing Lists</a></li>
                 <li><a class="dropdown-item" href="articles.html">Articles</a></li>
                 <li><a class="dropdown-item" href="news.html">News</a></li>
                 <li><a class="dropdown-item" href="events.html">Events</a></li>
-                <li class="divider"></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="community.html">More</a></li>
               </ul>
             </li>
 
             <!-- About -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 About
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-about">
                 <li><a class="dropdown-item" href="about.html">About</a></li>
                 <li><a class="dropdown-item" href="security-reports.html">Vulnerability Reports</a></li>
               </ul>
@@ -135,10 +135,10 @@
           <ul class="d-flex justify-content-end navbar-nav mb-2 mb-lg-0">
             <!-- The ASF -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-asf" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Apache Software Foundation
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-asf">
                 <li><a class="dropdown-item" href="http://www.apache.org/">Apache Homepage</a></li>
                 <li><a class="dropdown-item" href="http://www.apache.org/licenses/">License</a></li>
                 <li><a class="dropdown-item" href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
@@ -150,8 +150,6 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-
 
 
   <div class="page-header">
@@ -266,8 +264,8 @@ To download the current release, please go to the <a href="download.html">downlo
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.7.1/shiro-all-1.7.1.jar">shiro-all</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.7.1/shiro-all-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.7.1/shiro-all-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.7.1/shiro-all-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.7.1/shiro-all-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.7.1/shiro-all-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -287,8 +285,8 @@ For Maven builds, it is <b>highly</b> recommended to specify individual modules 
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.7.1/shiro-core-1.7.1.jar">shiro-core</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.7.1/shiro-core-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.7.1/shiro-core-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.7.1/shiro-core-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.7.1/shiro-core-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.7.1/shiro-core-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -311,8 +309,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.7.1/shiro-web-1.7.1.jar">shiro-web</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.7.1/shiro-web-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.7.1/shiro-web-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.7.1/shiro-web-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.7.1/shiro-web-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.7.1/shiro-web-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -331,8 +329,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.7.1/shiro-servlet-plugin-1.7.1.jar">shiro-servlet-plugin</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.7.1/shiro-servlet-plugin-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.7.1/shiro-servlet-plugin-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.7.1/shiro-servlet-plugin-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.7.1/shiro-servlet-plugin-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.7.1/shiro-servlet-plugin-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -351,8 +349,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.7.1/shiro-jaxrs-1.7.1.jar">shiro-jaxrs</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.7.1/shiro-jaxrs-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.7.1/shiro-jaxrs-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.7.1/shiro-jaxrs-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.7.1/shiro-jaxrs-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.7.1/shiro-jaxrs-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -371,8 +369,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.7.1/shiro-aspectj-1.7.1.jar">shiro-aspectj</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.7.1/shiro-aspectj-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.7.1/shiro-aspectj-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.7.1/shiro-aspectj-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.7.1/shiro-aspectj-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.7.1/shiro-aspectj-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -392,8 +390,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.7.1/shiro-cas-1.7.1.jar">shiro-cas</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.7.1/shiro-cas-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.7.1/shiro-cas-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.7.1/shiro-cas-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.7.1/shiro-cas-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.7.1/shiro-cas-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -416,8 +414,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.7.1/shiro-ehcache-1.7.1.jar">shiro-ehcache</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.7.1/shiro-ehcache-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.7.1/shiro-ehcache-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.7.1/shiro-ehcache-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.7.1/shiro-ehcache-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.7.1/shiro-ehcache-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -436,8 +434,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.7.1/shiro-hazelcast-1.7.1.jar">shiro-hazelcast</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.7.1/shiro-hazelcast-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.7.1/shiro-hazelcast-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.7.1/shiro-hazelcast-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.7.1/shiro-hazelcast-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.7.1/shiro-hazelcast-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -456,8 +454,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.7.1/shiro-features-1.7.1features.xml">shiro-features</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.7.1/shiro-features-1.7.1features.xml.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.7.1/shiro-features-1.7.1features.xml.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.7.1/shiro-features-1.7.1features.xml.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.7.1/shiro-features-1.7.1features.xml.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.7.1/shiro-features-1.7.1features.xml.sha1">sha1</a>)
     </td>
 
     <td>
@@ -476,8 +474,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.7.1/shiro-guice-1.7.1.jar">shiro-guice</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.7.1/shiro-guice-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.7.1/shiro-guice-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.7.1/shiro-guice-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.7.1/shiro-guice-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.7.1/shiro-guice-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -496,8 +494,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.7.1/shiro-quartz-1.7.1.jar">shiro-quartz</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.7.1/shiro-quartz-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.7.1/shiro-quartz-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.7.1/shiro-quartz-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.7.1/shiro-quartz-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.7.1/shiro-quartz-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -517,8 +515,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.7.1/shiro-spring-1.7.1.jar">shiro-spring</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.7.1/shiro-spring-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.7.1/shiro-spring-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.7.1/shiro-spring-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.7.1/shiro-spring-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.7.1/shiro-spring-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -537,8 +535,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.7.1/shiro-spring-boot-starter-1.7.1.jar">shiro-spring-boot-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.7.1/shiro-spring-boot-starter-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.7.1/shiro-spring-boot-starter-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.7.1/shiro-spring-boot-starter-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.7.1/shiro-spring-boot-starter-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.7.1/shiro-spring-boot-starter-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -557,8 +555,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.7.1/shiro-spring-boot-web-starter-1.7.1.jar">shiro-spring-boot-web-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.7.1/shiro-spring-boot-web-starter-1.7.1.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.7.1/shiro-spring-boot-web-starter-1.7.1.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.7.1/shiro-spring-boot-web-starter-1.7.1.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.7.1/shiro-spring-boot-web-starter-1.7.1.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.7.1/shiro-spring-boot-web-starter-1.7.1.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -577,8 +575,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.7.1/shiro-tools-hasher-1.7.1cli.jar">shiro-tools-hasher</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.7.1/shiro-tools-hasher-1.7.1cli.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.7.1/shiro-tools-hasher-1.7.1cli.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.7.1/shiro-tools-hasher-1.7.1cli.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.7.1/shiro-tools-hasher-1.7.1cli.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.7.1/shiro-tools-hasher-1.7.1cli.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -642,8 +640,8 @@ git checkout shiro-root-1.7.1 -b shiro-root-1.7.1
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.6.0/shiro-all-1.6.0.jar">shiro-all</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.6.0/shiro-all-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.6.0/shiro-all-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.6.0/shiro-all-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.6.0/shiro-all-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.6.0/shiro-all-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -663,8 +661,8 @@ For Maven builds, it is <b>highly</b> recommended to specify individual modules 
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.6.0/shiro-core-1.6.0.jar">shiro-core</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.6.0/shiro-core-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.6.0/shiro-core-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.6.0/shiro-core-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.6.0/shiro-core-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.6.0/shiro-core-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -687,8 +685,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.6.0/shiro-web-1.6.0.jar">shiro-web</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.6.0/shiro-web-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.6.0/shiro-web-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.6.0/shiro-web-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.6.0/shiro-web-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.6.0/shiro-web-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -707,8 +705,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.6.0/shiro-servlet-plugin-1.6.0.jar">shiro-servlet-plugin</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.6.0/shiro-servlet-plugin-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.6.0/shiro-servlet-plugin-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.6.0/shiro-servlet-plugin-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.6.0/shiro-servlet-plugin-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.6.0/shiro-servlet-plugin-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -727,8 +725,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.6.0/shiro-jaxrs-1.6.0.jar">shiro-jaxrs</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.6.0/shiro-jaxrs-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.6.0/shiro-jaxrs-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.6.0/shiro-jaxrs-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.6.0/shiro-jaxrs-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.6.0/shiro-jaxrs-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -747,8 +745,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.6.0/shiro-aspectj-1.6.0.jar">shiro-aspectj</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.6.0/shiro-aspectj-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.6.0/shiro-aspectj-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.6.0/shiro-aspectj-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.6.0/shiro-aspectj-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.6.0/shiro-aspectj-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -768,8 +766,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.6.0/shiro-cas-1.6.0.jar">shiro-cas</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.6.0/shiro-cas-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.6.0/shiro-cas-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.6.0/shiro-cas-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.6.0/shiro-cas-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.6.0/shiro-cas-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -792,8 +790,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.6.0/shiro-ehcache-1.6.0.jar">shiro-ehcache</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.6.0/shiro-ehcache-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.6.0/shiro-ehcache-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.6.0/shiro-ehcache-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.6.0/shiro-ehcache-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.6.0/shiro-ehcache-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -812,8 +810,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.6.0/shiro-hazelcast-1.6.0.jar">shiro-hazelcast</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.6.0/shiro-hazelcast-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.6.0/shiro-hazelcast-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.6.0/shiro-hazelcast-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.6.0/shiro-hazelcast-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.6.0/shiro-hazelcast-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -832,8 +830,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.6.0/shiro-features-1.6.0features.xml">shiro-features</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.6.0/shiro-features-1.6.0features.xml.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.6.0/shiro-features-1.6.0features.xml.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.6.0/shiro-features-1.6.0features.xml.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.6.0/shiro-features-1.6.0features.xml.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.6.0/shiro-features-1.6.0features.xml.sha1">sha1</a>)
     </td>
 
     <td>
@@ -852,8 +850,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.6.0/shiro-guice-1.6.0.jar">shiro-guice</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.6.0/shiro-guice-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.6.0/shiro-guice-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.6.0/shiro-guice-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.6.0/shiro-guice-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.6.0/shiro-guice-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -872,8 +870,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.6.0/shiro-quartz-1.6.0.jar">shiro-quartz</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.6.0/shiro-quartz-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.6.0/shiro-quartz-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.6.0/shiro-quartz-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.6.0/shiro-quartz-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.6.0/shiro-quartz-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -893,8 +891,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.6.0/shiro-spring-1.6.0.jar">shiro-spring</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.6.0/shiro-spring-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.6.0/shiro-spring-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.6.0/shiro-spring-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.6.0/shiro-spring-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.6.0/shiro-spring-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -913,8 +911,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.6.0/shiro-spring-boot-starter-1.6.0.jar">shiro-spring-boot-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.6.0/shiro-spring-boot-starter-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.6.0/shiro-spring-boot-starter-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.6.0/shiro-spring-boot-starter-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.6.0/shiro-spring-boot-starter-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.6.0/shiro-spring-boot-starter-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -933,8 +931,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.6.0/shiro-spring-boot-web-starter-1.6.0.jar">shiro-spring-boot-web-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.6.0/shiro-spring-boot-web-starter-1.6.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.6.0/shiro-spring-boot-web-starter-1.6.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.6.0/shiro-spring-boot-web-starter-1.6.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.6.0/shiro-spring-boot-web-starter-1.6.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.6.0/shiro-spring-boot-web-starter-1.6.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -953,8 +951,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.6.0/shiro-tools-hasher-1.6.0cli.jar">shiro-tools-hasher</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.6.0/shiro-tools-hasher-1.6.0cli.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.6.0/shiro-tools-hasher-1.6.0cli.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.6.0/shiro-tools-hasher-1.6.0cli.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.6.0/shiro-tools-hasher-1.6.0cli.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.6.0/shiro-tools-hasher-1.6.0cli.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1018,8 +1016,8 @@ git checkout shiro-root-1.6.0 -b shiro-root-1.6.0
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.5.3/shiro-all-1.5.3.jar">shiro-all</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.5.3/shiro-all-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.5.3/shiro-all-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.5.3/shiro-all-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.5.3/shiro-all-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.5.3/shiro-all-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1039,8 +1037,8 @@ For Maven builds, it is <b>highly</b> recommended to specify individual modules 
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.5.3/shiro-core-1.5.3.jar">shiro-core</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.5.3/shiro-core-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.5.3/shiro-core-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.5.3/shiro-core-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.5.3/shiro-core-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.5.3/shiro-core-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1063,8 +1061,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.5.3/shiro-web-1.5.3.jar">shiro-web</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.5.3/shiro-web-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.5.3/shiro-web-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.5.3/shiro-web-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.5.3/shiro-web-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.5.3/shiro-web-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1083,8 +1081,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.5.3/shiro-servlet-plugin-1.5.3.jar">shiro-servlet-plugin</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.5.3/shiro-servlet-plugin-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.5.3/shiro-servlet-plugin-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.5.3/shiro-servlet-plugin-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.5.3/shiro-servlet-plugin-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.5.3/shiro-servlet-plugin-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1103,8 +1101,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.5.3/shiro-jaxrs-1.5.3.jar">shiro-jaxrs</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.5.3/shiro-jaxrs-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.5.3/shiro-jaxrs-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.5.3/shiro-jaxrs-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.5.3/shiro-jaxrs-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.5.3/shiro-jaxrs-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1123,8 +1121,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.5.3/shiro-aspectj-1.5.3.jar">shiro-aspectj</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.5.3/shiro-aspectj-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.5.3/shiro-aspectj-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.5.3/shiro-aspectj-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.5.3/shiro-aspectj-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.5.3/shiro-aspectj-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1144,8 +1142,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.5.3/shiro-cas-1.5.3.jar">shiro-cas</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.5.3/shiro-cas-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.5.3/shiro-cas-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.5.3/shiro-cas-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.5.3/shiro-cas-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.5.3/shiro-cas-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1168,8 +1166,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.5.3/shiro-ehcache-1.5.3.jar">shiro-ehcache</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.5.3/shiro-ehcache-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.5.3/shiro-ehcache-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.5.3/shiro-ehcache-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.5.3/shiro-ehcache-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.5.3/shiro-ehcache-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1188,8 +1186,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.5.3/shiro-hazelcast-1.5.3.jar">shiro-hazelcast</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.5.3/shiro-hazelcast-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.5.3/shiro-hazelcast-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.5.3/shiro-hazelcast-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.5.3/shiro-hazelcast-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.5.3/shiro-hazelcast-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1208,8 +1206,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.5.3/shiro-features-1.5.3features.xml">shiro-features</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.5.3/shiro-features-1.5.3features.xml.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.5.3/shiro-features-1.5.3features.xml.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.5.3/shiro-features-1.5.3features.xml.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.5.3/shiro-features-1.5.3features.xml.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.5.3/shiro-features-1.5.3features.xml.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1228,8 +1226,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.5.3/shiro-guice-1.5.3.jar">shiro-guice</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.5.3/shiro-guice-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.5.3/shiro-guice-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.5.3/shiro-guice-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.5.3/shiro-guice-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.5.3/shiro-guice-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1248,8 +1246,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.5.3/shiro-quartz-1.5.3.jar">shiro-quartz</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.5.3/shiro-quartz-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.5.3/shiro-quartz-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.5.3/shiro-quartz-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.5.3/shiro-quartz-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.5.3/shiro-quartz-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1269,8 +1267,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.5.3/shiro-spring-1.5.3.jar">shiro-spring</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.5.3/shiro-spring-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.5.3/shiro-spring-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.5.3/shiro-spring-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.5.3/shiro-spring-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.5.3/shiro-spring-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1289,8 +1287,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.5.3/shiro-spring-boot-starter-1.5.3.jar">shiro-spring-boot-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.5.3/shiro-spring-boot-starter-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.5.3/shiro-spring-boot-starter-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.5.3/shiro-spring-boot-starter-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.5.3/shiro-spring-boot-starter-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.5.3/shiro-spring-boot-starter-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1309,8 +1307,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.5.3/shiro-spring-boot-web-starter-1.5.3.jar">shiro-spring-boot-web-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.5.3/shiro-spring-boot-web-starter-1.5.3.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.5.3/shiro-spring-boot-web-starter-1.5.3.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.5.3/shiro-spring-boot-web-starter-1.5.3.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.5.3/shiro-spring-boot-web-starter-1.5.3.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.5.3/shiro-spring-boot-web-starter-1.5.3.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1329,8 +1327,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.5.3/shiro-tools-hasher-1.5.3cli.jar">shiro-tools-hasher</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.5.3/shiro-tools-hasher-1.5.3cli.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.5.3/shiro-tools-hasher-1.5.3cli.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.5.3/shiro-tools-hasher-1.5.3cli.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.5.3/shiro-tools-hasher-1.5.3cli.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.5.3/shiro-tools-hasher-1.5.3cli.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1394,8 +1392,8 @@ git checkout shiro-root-1.5.3 -b shiro-root-1.5.3
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.4.2/shiro-all-1.4.2.jar">shiro-all</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.4.2/shiro-all-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.4.2/shiro-all-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.4.2/shiro-all-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.4.2/shiro-all-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.4.2/shiro-all-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1415,8 +1413,8 @@ For Maven builds, it is <b>highly</b> recommended to specify individual modules 
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar">shiro-core</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.4.2/shiro-core-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1439,8 +1437,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2.jar">shiro-web</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.4.2/shiro-web-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1459,8 +1457,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.4.2/shiro-servlet-plugin-1.4.2.jar">shiro-servlet-plugin</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.4.2/shiro-servlet-plugin-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.4.2/shiro-servlet-plugin-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.4.2/shiro-servlet-plugin-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.4.2/shiro-servlet-plugin-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-servlet-plugin/1.4.2/shiro-servlet-plugin-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1479,8 +1477,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.4.2/shiro-jaxrs-1.4.2.jar">shiro-jaxrs</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.4.2/shiro-jaxrs-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.4.2/shiro-jaxrs-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.4.2/shiro-jaxrs-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.4.2/shiro-jaxrs-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-jaxrs/1.4.2/shiro-jaxrs-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1499,8 +1497,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.4.2/shiro-aspectj-1.4.2.jar">shiro-aspectj</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.4.2/shiro-aspectj-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.4.2/shiro-aspectj-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.4.2/shiro-aspectj-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.4.2/shiro-aspectj-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.4.2/shiro-aspectj-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1520,8 +1518,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.4.2/shiro-cas-1.4.2.jar">shiro-cas</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.4.2/shiro-cas-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.4.2/shiro-cas-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.4.2/shiro-cas-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.4.2/shiro-cas-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.4.2/shiro-cas-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1544,8 +1542,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.4.2/shiro-ehcache-1.4.2.jar">shiro-ehcache</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.4.2/shiro-ehcache-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.4.2/shiro-ehcache-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.4.2/shiro-ehcache-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.4.2/shiro-ehcache-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.4.2/shiro-ehcache-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1564,8 +1562,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.4.2/shiro-hazelcast-1.4.2.jar">shiro-hazelcast</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.4.2/shiro-hazelcast-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.4.2/shiro-hazelcast-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.4.2/shiro-hazelcast-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.4.2/shiro-hazelcast-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.4.2/shiro-hazelcast-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1584,8 +1582,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.4.2/shiro-features-1.4.2features.xml">shiro-features</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.4.2/shiro-features-1.4.2features.xml.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.4.2/shiro-features-1.4.2features.xml.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.4.2/shiro-features-1.4.2features.xml.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.4.2/shiro-features-1.4.2features.xml.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.4.2/shiro-features-1.4.2features.xml.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1604,8 +1602,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.4.2/shiro-guice-1.4.2.jar">shiro-guice</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.4.2/shiro-guice-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.4.2/shiro-guice-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.4.2/shiro-guice-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.4.2/shiro-guice-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.4.2/shiro-guice-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1624,8 +1622,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.4.2/shiro-quartz-1.4.2.jar">shiro-quartz</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.4.2/shiro-quartz-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.4.2/shiro-quartz-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.4.2/shiro-quartz-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.4.2/shiro-quartz-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.4.2/shiro-quartz-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1645,8 +1643,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.4.2/shiro-spring-1.4.2.jar">shiro-spring</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.4.2/shiro-spring-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.4.2/shiro-spring-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.4.2/shiro-spring-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.4.2/shiro-spring-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.4.2/shiro-spring-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1665,8 +1663,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.4.2/shiro-spring-boot-starter-1.4.2.jar">shiro-spring-boot-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.4.2/shiro-spring-boot-starter-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.4.2/shiro-spring-boot-starter-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.4.2/shiro-spring-boot-starter-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.4.2/shiro-spring-boot-starter-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-starter/1.4.2/shiro-spring-boot-starter-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1685,8 +1683,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.4.2/shiro-spring-boot-web-starter-1.4.2.jar">shiro-spring-boot-web-starter</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.4.2/shiro-spring-boot-web-starter-1.4.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.4.2/shiro-spring-boot-web-starter-1.4.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.4.2/shiro-spring-boot-web-starter-1.4.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.4.2/shiro-spring-boot-web-starter-1.4.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring-boot-web-starter/1.4.2/shiro-spring-boot-web-starter-1.4.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1705,8 +1703,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.4.2/shiro-tools-hasher-1.4.2cli.jar">shiro-tools-hasher</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.4.2/shiro-tools-hasher-1.4.2cli.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.4.2/shiro-tools-hasher-1.4.2cli.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.4.2/shiro-tools-hasher-1.4.2cli.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.4.2/shiro-tools-hasher-1.4.2cli.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.4.2/shiro-tools-hasher-1.4.2cli.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1770,8 +1768,8 @@ git checkout shiro-root-1.4.2 -b shiro-root-1.4.2
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar">shiro-all</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1791,8 +1789,8 @@ For Maven builds, it is <b>highly</b> recommended to specify individual modules 
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar">shiro-core</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1815,8 +1813,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar">shiro-web</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1835,8 +1833,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.3.2/shiro-aspectj-1.3.2.jar">shiro-aspectj</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.3.2/shiro-aspectj-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.3.2/shiro-aspectj-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.3.2/shiro-aspectj-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.3.2/shiro-aspectj-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.3.2/shiro-aspectj-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1856,8 +1854,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.3.2/shiro-cas-1.3.2.jar">shiro-cas</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.3.2/shiro-cas-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.3.2/shiro-cas-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.3.2/shiro-cas-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.3.2/shiro-cas-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.3.2/shiro-cas-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1880,8 +1878,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar">shiro-ehcache</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.3.2/shiro-ehcache-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1900,8 +1898,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.3.2/shiro-hazelcast-1.3.2.jar">shiro-hazelcast</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.3.2/shiro-hazelcast-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.3.2/shiro-hazelcast-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.3.2/shiro-hazelcast-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.3.2/shiro-hazelcast-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-hazelcast/1.3.2/shiro-hazelcast-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1920,8 +1918,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.3.2/shiro-features-1.3.2features.xml">shiro-features</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.3.2/shiro-features-1.3.2features.xml.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.3.2/shiro-features-1.3.2features.xml.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.3.2/shiro-features-1.3.2features.xml.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.3.2/shiro-features-1.3.2features.xml.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.3.2/shiro-features-1.3.2features.xml.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1940,8 +1938,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.3.2/shiro-guice-1.3.2.jar">shiro-guice</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.3.2/shiro-guice-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.3.2/shiro-guice-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.3.2/shiro-guice-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.3.2/shiro-guice-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.3.2/shiro-guice-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1960,8 +1958,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.3.2/shiro-quartz-1.3.2.jar">shiro-quartz</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.3.2/shiro-quartz-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.3.2/shiro-quartz-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.3.2/shiro-quartz-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.3.2/shiro-quartz-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.3.2/shiro-quartz-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -1981,8 +1979,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.3.2/shiro-spring-1.3.2.jar">shiro-spring</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.3.2/shiro-spring-1.3.2.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.3.2/shiro-spring-1.3.2.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.3.2/shiro-spring-1.3.2.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.3.2/shiro-spring-1.3.2.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.3.2/shiro-spring-1.3.2.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2001,8 +1999,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.3.2/shiro-tools-hasher-1.3.2cli.jar">shiro-tools-hasher</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.3.2/shiro-tools-hasher-1.3.2cli.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.3.2/shiro-tools-hasher-1.3.2cli.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.3.2/shiro-tools-hasher-1.3.2cli.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.3.2/shiro-tools-hasher-1.3.2cli.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.3.2/shiro-tools-hasher-1.3.2cli.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2066,8 +2064,8 @@ git checkout shiro-root-1.3.2 -b shiro-root-1.3.2
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.2.6/shiro-all-1.2.6.jar">shiro-all</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.2.6/shiro-all-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.2.6/shiro-all-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.2.6/shiro-all-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.2.6/shiro-all-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.2.6/shiro-all-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2087,8 +2085,8 @@ For Maven builds, it is <b>highly</b> recommended to specify individual modules 
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6.jar">shiro-core</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2111,8 +2109,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.2.6/shiro-web-1.2.6.jar">shiro-web</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.2.6/shiro-web-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.2.6/shiro-web-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.2.6/shiro-web-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.2.6/shiro-web-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.2.6/shiro-web-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2131,8 +2129,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.2.6/shiro-aspectj-1.2.6.jar">shiro-aspectj</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.2.6/shiro-aspectj-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.2.6/shiro-aspectj-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.2.6/shiro-aspectj-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.2.6/shiro-aspectj-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.2.6/shiro-aspectj-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2152,8 +2150,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.2.6/shiro-cas-1.2.6.jar">shiro-cas</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.2.6/shiro-cas-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.2.6/shiro-cas-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.2.6/shiro-cas-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.2.6/shiro-cas-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-cas/1.2.6/shiro-cas-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2176,8 +2174,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.2.6/shiro-ehcache-1.2.6.jar">shiro-ehcache</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.2.6/shiro-ehcache-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.2.6/shiro-ehcache-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.2.6/shiro-ehcache-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.2.6/shiro-ehcache-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.2.6/shiro-ehcache-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2196,8 +2194,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.2.6/shiro-features-1.2.6features.xml">shiro-features</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.2.6/shiro-features-1.2.6features.xml.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.2.6/shiro-features-1.2.6features.xml.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.2.6/shiro-features-1.2.6features.xml.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.2.6/shiro-features-1.2.6features.xml.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-features/1.2.6/shiro-features-1.2.6features.xml.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2216,8 +2214,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.2.6/shiro-guice-1.2.6.jar">shiro-guice</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.2.6/shiro-guice-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.2.6/shiro-guice-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.2.6/shiro-guice-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.2.6/shiro-guice-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-guice/1.2.6/shiro-guice-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2236,8 +2234,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.2.6/shiro-quartz-1.2.6.jar">shiro-quartz</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.2.6/shiro-quartz-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.2.6/shiro-quartz-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.2.6/shiro-quartz-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.2.6/shiro-quartz-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.2.6/shiro-quartz-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2257,8 +2255,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.2.6/shiro-spring-1.2.6.jar">shiro-spring</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.2.6/shiro-spring-1.2.6.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.2.6/shiro-spring-1.2.6.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.2.6/shiro-spring-1.2.6.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.2.6/shiro-spring-1.2.6.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.2.6/shiro-spring-1.2.6.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2277,8 +2275,8 @@ to the Apache Shiro based <a href='https://github.com/bujiio/buji-pac4j'>buji-pa
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.2.6/shiro-tools-hasher-1.2.6cli.jar">shiro-tools-hasher</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.2.6/shiro-tools-hasher-1.2.6cli.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.2.6/shiro-tools-hasher-1.2.6cli.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.2.6/shiro-tools-hasher-1.2.6cli.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.2.6/shiro-tools-hasher-1.2.6cli.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/tools/shiro-tools-hasher/1.2.6/shiro-tools-hasher-1.2.6cli.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2342,8 +2340,8 @@ git checkout shiro-root-1.2.6 -b shiro-root-1.2.6
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.1.0/shiro-all-1.1.0.jar">shiro-all</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.1.0/shiro-all-1.1.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.1.0/shiro-all-1.1.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.1.0/shiro-all-1.1.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.1.0/shiro-all-1.1.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-all/1.1.0/shiro-all-1.1.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2363,8 +2361,8 @@ For Maven builds, it is <b>highly</b> recommended to specify individual modules 
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.1.0/shiro-core-1.1.0.jar">shiro-core</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.1.0/shiro-core-1.1.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.1.0/shiro-core-1.1.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.1.0/shiro-core-1.1.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.1.0/shiro-core-1.1.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.1.0/shiro-core-1.1.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2387,8 +2385,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.1.0/shiro-web-1.1.0.jar">shiro-web</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.1.0/shiro-web-1.1.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.1.0/shiro-web-1.1.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.1.0/shiro-web-1.1.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.1.0/shiro-web-1.1.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-web/1.1.0/shiro-web-1.1.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2407,8 +2405,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.1.0/shiro-aspectj-1.1.0.jar">shiro-aspectj</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.1.0/shiro-aspectj-1.1.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.1.0/shiro-aspectj-1.1.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.1.0/shiro-aspectj-1.1.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.1.0/shiro-aspectj-1.1.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-aspectj/1.1.0/shiro-aspectj-1.1.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2428,8 +2426,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.1.0/shiro-ehcache-1.1.0.jar">shiro-ehcache</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.1.0/shiro-ehcache-1.1.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.1.0/shiro-ehcache-1.1.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.1.0/shiro-ehcache-1.1.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.1.0/shiro-ehcache-1.1.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-ehcache/1.1.0/shiro-ehcache-1.1.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2448,8 +2446,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.1.0/shiro-quartz-1.1.0.jar">shiro-quartz</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.1.0/shiro-quartz-1.1.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.1.0/shiro-quartz-1.1.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.1.0/shiro-quartz-1.1.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.1.0/shiro-quartz-1.1.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-quartz/1.1.0/shiro-quartz-1.1.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2469,8 +2467,8 @@ and one of its binding jars is required.
     <td style="white-space: nowrap;">
       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.1.0/shiro-spring-1.1.0.jar">shiro-spring</a><br/>
       (<a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.1.0/shiro-spring-1.1.0.jar.asc">pgp</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.1.0/shiro-spring-1.1.0.jar.md5">md5</a>,
-      <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.1.0/shiro-spring-1.1.0.jar.sha1">sha1</a>)
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.1.0/shiro-spring-1.1.0.jar.md5">md5</a>,
+       <a href="https://repo1.maven.org/maven2/org/apache/shiro/shiro-spring/1.1.0/shiro-spring-1.1.0.jar.sha1">sha1</a>)
     </td>
 
     <td>
@@ -2510,16 +2508,14 @@ git checkout shiro-root-1.1.0 -b shiro-root-1.1.0
 
 <hr />
 
-		</div>
-        <div id="push"></div>
-    </div>
+</div> 
 
     <div class="footer-padding"></div>
 
-    <div class="container-fluid" id="custom-footer">
-      <footer class="row justify-content-between align-items-center border-top">
+    <div class="container-fluid pt-2 border-top" id="custom-footer">
+      <footer class="row justify-content-between align-items-center">
         <div class=" col-md-5">
-          <div class="copyright-footer d-flex flex-wrap justify-content-start">
+          <div class="copyright-footer justify-content-start">
             <a href="https://www.apache.org/foundation/contributing.html">Donate to the ASF</a>&nbsp;|&nbsp;
             <a href="https://www.apache.org/licenses/LICENSE-2.0.html">License</a>&nbsp;
             <p class="text-muted">Copyright &copy; 2008-2021 The Apache Software Foundation</p>
@@ -2533,7 +2529,7 @@ git checkout shiro-root-1.1.0 -b shiro-root-1.1.0
         </div>
 
         <div class="d-flex justify-content-end col-md-4" id="editThisPage">
-          <input type="hidden" id="ghEditPage" value="/home/bmarwell/git/apache/shiro-site/jbake/content/release-archive.adoc"></input>
+          <input type="hidden" id="ghEditPage" value="https://github.com/apache/shiro-site/edit/jbake/jbake/content/release-archive.adoc"/>
         </div>
 
         <div class="d-flex col-md-2 justify-content-end" style="position: relative">
@@ -2550,7 +2546,7 @@ git checkout shiro-root-1.1.0 -b shiro-root-1.1.0
     <script src="highlight.js-11.2.0/highlight.min.js"></script>
     <script src="js/shiro.js"></script>
 
-    <script type="text/javascript">
+    <script>
         docReady(
           addPageEditLink()
       );
