@@ -18,21 +18,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Apache Shiro Team | Apache Shiro</title>
+    <title>Roadmap | Apache Shiro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content='documentation,todo,lend-a-hand'>
+    <meta name="keywords" content='events,meetings'>
     <meta name="generator" content="JBake">
     <meta name="google-site-verification" content="QIax6uT5UX3enoU0G8Pz2pXbQ45KaQuHZ3nCh9V27mw">
     <meta name="google-site-verification" content="ecFap6dWJgS_GCCtxmJQJ_nFYQhM6EgSpBPZDU7xsCE">
     <meta name="google-site-verification" content="gBTYOG8lMfNb_jrWrH3kFbudpEs_WrAJ2lb2-zLRaso"/>
     <meta name="msvalidate.01" content="0B57EB46CBFAD8FD45008D2DB6B6C68C">
 
-    <meta property="og:title" content="Apache Shiro Team | Apache Shiro"/>
-    <meta property="og:type" content="website"/>
-    <meta property="article:tag" content='documentation'/>
-    <meta property="article:tag" content='todo'/>
-    <meta property="article:tag" content='lend-a-hand'/>
+    <meta property="og:title" content="Roadmap | Apache Shiro"/>
+    <meta property="og:type" content="article"/>
+    <meta property="article:modification_time" content="2021-10-14"/>
+    <meta property="article:tag" content='events'/>
+    <meta property="article:tag" content='meetings'/>
     <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content='https://shiro.apache.org/roadmap.html'/>
     <meta property="og:image" content='img/shiro-featured-image.png'/>
     <meta property="og:image:width" content='1200'/>
     <meta property="og:image:height" content='628'/>
@@ -159,26 +160,93 @@
       </div>
     </nav>
 
-  <div class="page-header">
-    <h1>Apache Shiro Team</h1>
-  </div>
+	<div class="page-header">
+		<h1>Roadmap</h1>
+	</div>
 
-<div class="paragraph">
-<p>TODO</p>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#excerpt_of_version_2_features">Excerpt of Version 2 features</a></li>
+<li><a href="#excerpt_of_version_2_changes">Excerpt of Version 2 changes</a></li>
+</ul>
 </div>
-<hr />
-
-<h2><a id="Lendahandwithdocumentation"></a>Lend a hand with documentation</h2>
-
-<p>While we hope this documentation helps you with the work you're doing with Apache Shiro,
-  the community is improving and expanding the documentation all the time.
-  If you'd like to help the Shiro project, please consider correcting, expanding, or adding documentation where you see a need.
-  Every little bit of help you provide expands the community and in turn improves Shiro. </p>
-
-<p>The easiest way to contribute your documentation is to submit a pull-request by clicking on the <code>Edit</code> link below,
-  or send it to the <a href="mailing-lists.html" title="Mailing Lists">User Mailing List</a>.</p>
-
-<hr />
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>We currently do not have a timeline for version 2, but we are already collecting ideas.
+New features are implemented into the "main" branch every now and then.</p>
+</div>
+<div class="paragraph">
+<p>You can find the complete list of ideas in our wiki: <a href="https://cwiki.apache.org/confluence/display/SHIRO/Version+2+Brainstorming">Version 2 Brainstorming</a>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This list is not exhausive.
+The wiki page should be regarded as the primary source.
+Feel free to tell us about your ideas on the <a href="mailing-lists.html">mailing lists</a>!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="excerpt_of_version_2_features">Excerpt of Version 2 features</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Event support</p>
+</li>
+<li>
+<p>Authorization ANTLR Grammar</p>
+</li>
+<li>
+<p>Multi-Stage Authentication via request/response</p>
+<div class="paragraph">
+<p>In applications that need to authenticate via multiple mechanisms (e.g. multi-factor authentication), a Request/Response protocol for login would probably be easier to use to support such workflows.</p>
+</div>
+</li>
+<li>
+<p>Captcha Support</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="excerpt_of_version_2_changes">Excerpt of Version 2 changes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Rename AuthenticationInfo to Account</p>
+</li>
+<li>
+<p>Realm refactoring</p>
+</li>
+<li>
+<p>New layout of maven modules</p>
+</li>
+<li>
+<p>Redefine Component Names</p>
+<div class="paragraph">
+<p>Change classes named FooDAO to FooStore instead.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+	<hr />
 
 </div> 
 
@@ -201,7 +269,7 @@
         </div>
 
         <div class="d-flex justify-content-end col-md-4" id="editThisPage">
-          <input type="hidden" id="ghEditPage" value="https://github.com/apache/shiro-site/edit/jbake/jbake/content/team.adoc"/>
+          <input type="hidden" id="ghEditPage" value="https://github.com/apache/shiro-site/edit/jbake/jbake/content/roadmap.adoc"/>
         </div>
 
         <div class="d-flex col-md-2 justify-content-end" style="position: relative">

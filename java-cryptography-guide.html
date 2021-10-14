@@ -18,21 +18,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Apache Shiro Team | Apache Shiro</title>
+    <title>Java Cryptography Guide | Apache Shiro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content='documentation,todo,lend-a-hand'>
+    <meta name="keywords" content='documentation,cryptography'>
     <meta name="generator" content="JBake">
     <meta name="google-site-verification" content="QIax6uT5UX3enoU0G8Pz2pXbQ45KaQuHZ3nCh9V27mw">
     <meta name="google-site-verification" content="ecFap6dWJgS_GCCtxmJQJ_nFYQhM6EgSpBPZDU7xsCE">
     <meta name="google-site-verification" content="gBTYOG8lMfNb_jrWrH3kFbudpEs_WrAJ2lb2-zLRaso"/>
     <meta name="msvalidate.01" content="0B57EB46CBFAD8FD45008D2DB6B6C68C">
 
-    <meta property="og:title" content="Apache Shiro Team | Apache Shiro"/>
-    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Java Cryptography Guide | Apache Shiro"/>
+    <meta property="og:type" content="article"/>
+    <meta property="article:modification_time" content="2021-10-14"/>
     <meta property="article:tag" content='documentation'/>
-    <meta property="article:tag" content='todo'/>
-    <meta property="article:tag" content='lend-a-hand'/>
+    <meta property="article:tag" content='cryptography'/>
     <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content='https://shiro.apache.org/java-cryptography-guide.html'/>
     <meta property="og:image" content='img/shiro-featured-image.png'/>
     <meta property="og:image:width" content='1200'/>
     <meta property="og:image:height" content='628'/>
@@ -159,26 +160,167 @@
       </div>
     </nav>
 
-  <div class="page-header">
-    <h1>Apache Shiro Team</h1>
-  </div>
+	<div class="page-header">
+		<h1>Java Cryptography Guide</h1>
+	</div>
 
-<div class="paragraph">
-<p>TODO</p>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#elements_of_cryptography">Elements of Cryptography</a>
+<ul class="sectlevel2">
+<li><a href="#ciphers_defined">Ciphers Defined</a></li>
+<li><a href="#hashes_defined">Hashes Defined</a></li>
+</ul>
+</li>
+<li><a href="#cipher_features">Cipher Features</a>
+<ul class="sectlevel2">
+<li><a href="#shiros_cipherservice_interface">Shiro&#8217;s CipherService Interface</a></li>
+</ul>
+</li>
+<li><a href="#hash_features">Hash Features</a>
+<ul class="sectlevel2">
+<li><a href="#shiros_hash_interface">Shiro&#8217;s Hash Interface</a></li>
+<li><a href="#examples_of_how_to_use_hashes_in_your_code">Examples of how to use Hashes in your code</a></li>
+</ul>
+</li>
+</ul>
 </div>
-<hr />
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cryptography is the protecting of information from undesired access by hiding it or converting it into nonsense so that no one can read it.</p>
+</div>
+<div class="paragraph">
+<p>Shiro is a major part of Shiro because we wanted to provide you with simplicity on what is typically a very complex topic.
+For example, the Java Cryptography Extension (JCE) already handles cryptography in a Java environment but is very difficult to learn and use.
+So we grabbed the concepts made available by the JCE API and make them available to us mortals.
+In addition, all of the calls in the JCE are procedural which doesn&#8217;t fit in Java&#8217;s Object Oriented paradigm.
+So in Shiro, our cryptography features are all object oriented.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="elements_of_cryptography">Elements of Cryptography</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>cryptography has two core elements in Shiro– ciphers and hashes.</p>
+</div>
+<div class="sect2">
+<h3 id="ciphers_defined">Ciphers Defined</h3>
+<div class="paragraph">
+<p>Ciphers are algorightms that can either encrypt or decrypt based on public or private key pair. And there are two different types of ciphers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Symmetric Cipher - encrypts and decrypts using the same key.</p>
+</li>
+<li>
+<p>Asymmetric Cipher - uses different keys for encryption and decryption.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Both cipher type are support in Shiro.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="hashes_defined">Hashes Defined</h3>
+<div class="paragraph">
+<p>A hash is a one-way irreversible conversion of an input source. In the JDK, a hash is referred to as a message digest. A cryptographic hash and a message digests are the same thing and both terms or correct.</p>
+</div>
+<div class="sect3">
+<h4 id="common_uses_for_hashes">Common uses for Hashes</h4>
+<div class="paragraph">
+<p>Hashes are often used to transforms credentials like passwords or biometric data. It&#8217;s a one way transformation so you can never see what the original value was. This is a very safe way of storing passwords so that no one other than the user will ever know a password, even if your system is compromised.</p>
+</div>
+<div class="paragraph">
+<p>In addition, Shiro&#8217;s hashes can be used with any type of data with an underlying byte array. Examples of this data include files, streams, byte arrays, strings, and character arrays.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cipher_features">Cipher Features</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="shiros_cipherservice_interface">Shiro&#8217;s CipherService Interface</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface CipherService {
 
-<h2><a id="Lendahandwithdocumentation"></a>Lend a hand with documentation</h2>
+   ByteSource encrypt( byte[] raw, byte[] key);
 
-<p>While we hope this documentation helps you with the work you're doing with Apache Shiro,
-  the community is improving and expanding the documentation all the time.
-  If you'd like to help the Shiro project, please consider correcting, expanding, or adding documentation where you see a need.
-  Every little bit of help you provide expands the community and in turn improves Shiro. </p>
+   void encrypt(InputStream in, OutputStream out, byte[] key);
 
-<p>The easiest way to contribute your documentation is to submit a pull-request by clicking on the <code>Edit</code> link below,
-  or send it to the <a href="mailing-lists.html" title="Mailing Lists">User Mailing List</a>.</p>
+   ByteSource decrypt( byte[] cipherText, byte[] key);
 
-<hr />
+   void decrypt(InputStream in, OutputStream out, byte[] key);
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="hash_features">Hash Features</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Salts are important when hashing…
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Repeated hashes are important when hashing …
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="shiros_hash_interface">Shiro&#8217;s Hash Interface</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface Hash {
+   byte[] getBytes();
+   String toHex();
+   String toBase64();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="examples_of_how_to_use_hashes_in_your_code">Examples of how to use Hashes in your code</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">//some examples:
+new Md5Hash("foo").toHex();
+
+//File MD5 Hash value for checksum:
+new MD5Hash( aFile ).toHex();
+
+//store a password, but not raw:
+new Sha256(aPassword, salt, 1024).toBase64();</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+	<hr />
 
 </div> 
 
@@ -201,7 +343,7 @@
         </div>
 
         <div class="d-flex justify-content-end col-md-4" id="editThisPage">
-          <input type="hidden" id="ghEditPage" value="https://github.com/apache/shiro-site/edit/jbake/jbake/content/team.adoc"/>
+          <input type="hidden" id="ghEditPage" value="https://github.com/apache/shiro-site/edit/jbake/jbake/content/java-cryptography-guide.adoc"/>
         </div>
 
         <div class="d-flex col-md-2 justify-content-end" style="position: relative">
