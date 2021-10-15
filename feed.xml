@@ -6,8 +6,8 @@
     <atom:link href="https://shiro.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Fri, 15 Oct 2021 10:17:31 +0200</pubDate>
-    <lastBuildDate>Fri, 15 Oct 2021 10:17:31 +0200</lastBuildDate>
+    <pubDate>Fri, 15 Oct 2021 13:50:26 +0200</pubDate>
+    <lastBuildDate>Fri, 15 Oct 2021 13:50:26 +0200</lastBuildDate>
 
     <item>
       <title>Apache Shiro v1.8.0 released</title>
